@@ -4,16 +4,11 @@ El objetivo es preparar el entorno para trabajar con AWS CDK con Python.
 
 ## Instalación y preparación de AWS CDK
 
-1. Crear y activar un entorno virtual:
-   ```bash
-   python -m venv .venv
-   source .venv/bin/activate  # En Windows: .venv\Scripts\activate
-   ```
-
-2. Instalar AWS CDK CLI globalmente:
-   ```bash
-   npm install -g aws-cdk
-   ```
+1. En caso de no tener nodejs, instalar con asdf:
+```bash
+   asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+   asdf install nodejs 22.11.0
+```
 
 3. Verificar la instalación:
    ```bash
@@ -31,12 +26,16 @@ El objetivo es preparar el entorno para trabajar con AWS CDK con Python.
    cdk init app --language python
    ```
 
-6. Instalar dependencias del proyecto:
+6. Inicializad el entorno de CDK en vuestra cuenta de AWS:
+   ```bash
+   cdk bootstrap
+   ```
+
+7. Instalar dependencias del proyecto:
    ```bash
    pip install -r requirements.txt
    ```
 
-# Laboratorio 3.6.1
 ## Creación de Usuario IAM y Grupo con AWS CDK
 
 El objetivo es crear un usuario IAM con permisos de PowerUserAccess usando CDK con Python.
@@ -60,7 +59,8 @@ El objetivo es crear un usuario IAM con permisos de PowerUserAccess usando CDK c
 
 2. Sintetizar el template CloudFormation:
    ```bash
-   cdk synth
+   cd ..
+   cdk synth > cf.yaml
    ```
 
 3. Desplegar la infraestructura:
@@ -68,12 +68,14 @@ El objetivo es crear un usuario IAM con permisos de PowerUserAccess usando CDK c
    cdk deploy
    ```
 
-4. Capturar los outputs del despliegue con las credenciales del usuario.
+4. Descomentad el output y volved a desplegar para ver un update.
 
-5. Enviar un email al profesor con:
+5. Capturar los outputs del despliegue con los detalles del usuario
+
+6. Enviar un email al profesor con:
    - Captura del despliegue correcto
    - Evidencia de la creación del usuario y grupo en la consola de AWS
-   - URL al repositorio con el código
+   - URL al repositorio con el código en github
 
 Referencias:
 - [AWS CDK Python Reference](https://docs.aws.amazon.com/cdk/api/v2/python/)

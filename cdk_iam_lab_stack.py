@@ -34,12 +34,7 @@ class CdkIamLabStack(Stack):
         )
 
         # Outputs para obtener las credenciales
-        CfnOutput(
-            self, 'AccessKeyId',
-            value=access_key.ref
-        )
-
-        CfnOutput(
-            self, 'SecretAccessKey',
-            value=access_key.attr_secret_access_key
-        )
+#        CfnOutput(
+#            self, 'AccessKeyId',
+#            value=access_key.ref
+#        )
