@@ -9,6 +9,8 @@ El objetivo es preparar el entorno para trabajar con AWS CDK con Python.
    asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
    asdf install nodejs 22.11.0
 ```
+![image](https://github.com/user-attachments/assets/94ef6006-22cc-4adc-a34b-a33632b2b391)
+
 
 3. Verificar la instalación:
    ```bash
