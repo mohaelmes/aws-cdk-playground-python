@@ -32,11 +32,13 @@ El objetivo es preparar el entorno para trabajar con AWS CDK con Python.
    ```bash
    cdk bootstrap
    ```
+![image](https://github.com/user-attachments/assets/330699d3-316d-4149-a795-745d50ae1e8f)
 
 7. Instalar dependencias del proyecto:
    ```bash
    pip install -r requirements.txt
    ```
+![image](https://github.com/user-attachments/assets/5ce5b35e-9ef3-425a-a106-2a1908a3d6f9)
 
 ## Creación de Usuario IAM y Grupo con AWS CDK
 
