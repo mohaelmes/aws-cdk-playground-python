@@ -66,20 +66,26 @@ El objetivo es crear un usuario IAM con permisos de PowerUserAccess usando CDK c
    cd ..
    cdk synth > cf.yaml
    ```
+![image](https://github.com/user-attachments/assets/754ef174-4992-4cd8-a925-c8b587342f53)
 
 3. Desplegar la infraestructura:
    ```bash
    cdk deploy
    ```
+![image](https://github.com/user-attachments/assets/0b9fcdaa-bd36-4ad0-8720-37f6ee4d4400)
+
+![image](https://github.com/user-attachments/assets/8989cad5-0268-4a65-ba58-683dce5da124)
 
 4. Descomentad el output y volved a desplegar para ver un update.
 
 5. Capturar los outputs del despliegue con los detalles del usuario
+![image](https://github.com/user-attachments/assets/33fa7641-4645-4e81-90a1-de2e307d25a0)
 
 6. Enviar un email al profesor con:
    - Captura del despliegue correcto
    - Evidencia de la creación del usuario y grupo en la consola de AWS
    - URL al repositorio con el código en github
+![image](https://github.com/user-attachments/assets/0e2402cd-4aa2-408c-add1-5548bc73870c)
 
 Referencias:
 - [AWS CDK Python Reference](https://docs.aws.amazon.com/cdk/api/v2/python/)
